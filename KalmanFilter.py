@@ -79,8 +79,9 @@ def main():
 
     plt.figure()
     plt.plot(t, measurements, label='Measurements', color='b', linewidth=0.5)
-    plt.plot(t, np.array(real_x), label='Real Track', color='y', linewidth=1.5)
+    plt.plot(t, np.array(real_x), label='Real Track', color='k', linewidth=1.5)
     plt.plot(t, predictions, label='Kalman Filter Prediction', color='r', linewidth=1.5)
+    plt.legend(loc='upper left')
     plt.show()
 
 if __name__ == "__main__":
